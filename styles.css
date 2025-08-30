@@ -3,13 +3,17 @@ body {
   background: #f0f2f5;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1000px;
-  margin: 100px auto;
+  width: 100%;
   padding: 0 20px;
 }
 .left {
@@ -23,7 +27,7 @@ body {
 }
 .left p {
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 150px;
 }
 .right {
   flex: 1;
@@ -38,12 +42,13 @@ body {
   width: 350px;
 }
 .login-box input {
-  width: 92%;
+  width: 100%;
   padding: 12px;
   margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 .login-box button {
   width: 100%;
@@ -54,6 +59,7 @@ body {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  box-sizing: border-box;
 }
 .login-btn {
   background: #1877f2;
@@ -66,7 +72,6 @@ body {
 }
 .login-box a {
   display: block;
-  text-align: center;
   margin: 10px 0;
   color: #1877f2;
   text-decoration: none;
